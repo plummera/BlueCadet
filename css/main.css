@@ -1,0 +1,23 @@
+img {
+  width: 200px;
+  max-length: 250px;
+  max-width: 310px;
+  border: 2px solid gray;
+  -webkit-transition: width 2s; /* Safari */
+  -webkit-transition-delay: 0.05s; /* Safari */
+  transition: width 2s;
+  transition-delay: 0.05s;
+}
+
+img:hover {
+  width: 310px
+}
+
+.card {
+  background-color: silver;
+  padding: 20px;
+}
+
+.container {
+  background-color: silver;
+}

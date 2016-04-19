@@ -19,6 +19,20 @@ module.exports = function(grunt) {
       dist: {
         src: ['lib/<%= pkg.name %>.js'],
         dest: 'dist/<%= pkg.name %>.js'
+      },
+      sass: {
+        src: ['test/scss/css/**/*.scss'],
+        dest: 'test/scss/build.scss'
+      }
+    },
+    sass: {
+      dist: {
+        options: {
+          style: 'expanded'
+        },
+        files: {
+          'test/css/main.css': 'test/scss/build.scss',
+        }
       }
     },
     uglify: {
@@ -60,13 +74,13 @@ module.exports = function(grunt) {
     },
     watch: {
       gruntfile: {
-        files: '<%= jshint.gruntfile.src %>',
-        tasks: ['jshint:gruntfile']
+        files: ['<%= jshint.gruntfile.src %>', 'test/scss/css/**/*.scss'],
+        tasks: ['jshint:gruntfile', 'concat:sass']
       },
       lib_test: {
         files: '<%= jshint.lib_test.src %>',
         tasks: ['jshint:lib_test', 'qunit']
-      }
+      },
     }
   });
 
@@ -76,8 +90,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-qunit');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-sass');
 
   // Default task.
-  grunt.registerTask('default', ['jshint', 'qunit', 'concat', 'uglify']);
+  grunt.registerTask('default', ['jshint', 'qunit', 'concat', 'sass', 'uglify']);
 
 };

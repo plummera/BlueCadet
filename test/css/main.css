@@ -1,0 +1,33 @@
+/*! <%= pkg.title || pkg.name %> - v<%= pkg.version %> - <%= grunt.template.today("yyyy-mm-dd") %>
+<%= pkg.homepage ? "* " + pkg.homepage + "\n" : "" %>* Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author.name %>; Licensed <%= _.pluck(pkg.licenses, "type").join(", ") %> */
+.btn {
+  border: 2px solid black;
+}
+
+img {
+  width: 200px;
+  max-length: 250px;
+  max-width: 310px;
+  border: 2px solid gray;
+  -webkit-transition: width 2s;
+  /* Safari */
+  -webkit-transition-delay: 0.05s;
+  /* Safari */
+  transition: width 2s;
+  transition-delay: 0.05s;
+}
+
+img:hover {
+  width: 310px;
+}
+
+.card {
+  background-color: silver;
+  padding: 20px;
+}
+
+.container {
+  background-color: silver;
+}
+
+/*# sourceMappingURL=main.css.map */

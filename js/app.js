@@ -1,1 +1,2 @@
-var app = angular.module("blueCadet", []);
+var app = angular.module('BlueCadet',
+ []);

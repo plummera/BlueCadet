@@ -1,5 +1,6 @@
-/*! <%= pkg.title || pkg.name %> - v<%= pkg.version %> - <%= grunt.template.today("yyyy-mm-dd") %>
-<%= pkg.homepage ? "* " + pkg.homepage + "\n" : "" %>* Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author.name %>; Licensed <%= _.pluck(pkg.licenses, "type").join(", ") %> */
+/*! blue-cadet - v0.1.2 - 2016-04-20
+* https://github.com/plummera/BlueCadet#readme
+* Copyright (c) 2016 ; Licensed  */
 .btn {
   border: 2px solid black;
 }
@@ -26,4 +27,27 @@ img:hover {
 
 .container {
   background-color: silver;
+}
+
+#stage {
+  background-color: silver;
+}
+
+#apps {
+  width: 350px;
+  border: 1px solid black;
+}
+
+.cover{
+    color: rgb(255, 255, 255);
+    position: relative;
+    min-height: 350px;
+    background: url("http://lewisking.net/images/header-image.jpg") no-repeat scroll 0px 100% / cover transparent;
+}
+
+nav ul li {
+  list-style:none;
+  float:left;
+  margin-right:50px;
+
 }

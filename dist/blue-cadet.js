@@ -1,2 +1,3 @@
-/*! <%= pkg.title || pkg.name %> - v<%= pkg.version %> - <%= grunt.template.today("yyyy-mm-dd") %>
-<%= pkg.homepage ? "* " + pkg.homepage + "\n" : "" %>* Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author.name %>; Licensed <%= _.pluck(pkg.licenses, "type").join(", ") %> */
+/*! blue-cadet - v0.1.2 - 2016-04-20
+* https://github.com/plummera/BlueCadet#readme
+* Copyright (c) 2016 ; Licensed  */

@@ -1,4 +1,4 @@
-app.controller('MainController', ['$scope', function($scope) {
+app.controller('MainController', ['$scope', '$http', function($scope) {
   $scope.move = {
     icon: 'img/move.jpg',
     title: 'MOVE',
@@ -30,26 +30,26 @@ app.controller('MainController', ['$scope', function($scope) {
   $scope.apps =
     [{
       icon: 'img/bluecadet_logo.jpeg',
-      title: 'BlueCadet[Gold-Team]',
+      title: 'BlueCadet [Gold-Team]',
       developer: 'PSDA (Anthony T. Plummer)',
       price: 0.00
     },
     {
       icon: 'img/bluecadet-200-150.jpg',
-      title: 'BlueCadet[Black-Team]',
+      title: 'BlueCadet [Black-Team]',
       developer: 'PSDA (Anthony T. Plummer)',
       Price: 0.00
     },
     {
       icon: 'img/busty.jpg',
-      title: 'BlueCadet[Red-Team]',
+      title: 'BlueCadet [Red-Team]',
       developer: 'PSDA (Anthony T. Plummer)',
       Price: 0.00
     },
     {
       icon: 'img/dolo.jpg',
-      title: 'BlueCadet[Blue-Team]',
+      title: 'BlueCadet [Blue-Team]',
       developer: 'PSDA (Anthony T. Plummer)',
       Price: 0.00
-    }]
+    }];
 }]);

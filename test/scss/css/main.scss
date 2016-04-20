@@ -21,3 +21,21 @@ img:hover {
 .container {
   background-color: silver;
 }
+
+#stage {
+  background-color: silver;
+}
+
+.cover{
+    color: rgb(255, 255, 255);
+    position: relative;
+    min-height: 350px;
+    background: url("http://lewisking.net/images/header-image.jpg") no-repeat scroll 0px 100% / cover transparent;
+}
+
+nav ul li {
+  list-style:none;
+  float:left;
+  margin-right:50px;
+
+}

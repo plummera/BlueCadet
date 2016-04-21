@@ -2,23 +2,36 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/main.css" rel="stylesheet" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="test/css/main.css" rel="stylesheet" />
 
     <!-- Include the AngularJS library -->
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
   </head>
-  <body ng-app="BlueCadet">
-    <div class="header">
-      <div class="container">
-        <h1>Thank You!</h1>
-      </div>
+  <body id="stage" ng-app="BlueCadet">
+
+    <!-- Menu -->
+    <ul class="nav nav-pills nav-justified">
+      <li role="presentation" class="active"><a href="#">Home</a></li>
+      <li role="presentation"><a href="#ThankYou">Thank You</a></li>
+      <li role="presentation"><a href="#">Messages</a></li>
+    </ul>
+
+    <!-- Splash Cover Photo -->
+    <div class="cover"></div>
+
+    <!-- Logo -->
+    <div id="logo"></div>
+
+    <div id="ThankYou" class="header">
+      <h1>Thank You!</h1>
     </div>
 
     <div class="main" ng-controller="MainController">
-      <div class="container">
+      <div id="apps" class="container">
         <div class="row">
-          <div class="card col-xs-4 col-sm-4 col-md-4" ng-repeat="app in apps">
+          <div class="cardholder container-fluid" ng-repeat="app in apps">
             <app-info info="app"></app-info>
             <install-app></install-app>
           </div>
@@ -36,6 +49,9 @@
     <!-- Directives -->
     <script src="js/directives/appInfo.js"></script>
     <script src="js/directives/installApp.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 
   </body>

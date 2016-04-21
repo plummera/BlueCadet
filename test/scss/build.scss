@@ -29,6 +29,20 @@ img:hover {
   background-color: silver;
 }
 
+.header {
+  padding: 50px;
+  margin-bottom: 35px;
+  background-color: white;
+}
+
+#logo {
+  position: relative;
+  background: url("/img/485.png");
+  width: 250px;
+  height: 250px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 #stage {
   background-color: silver;
 }
@@ -36,13 +50,15 @@ img:hover {
 #apps {
   width: 350px;
   border: 1px solid black;
+  float:right;
+  margin-right: 25px;
 }
 
 .cover{
     color: rgb(255, 255, 255);
     position: relative;
-    min-height: 350px;
-    background: url("http://lewisking.net/images/header-image.jpg") no-repeat scroll 0px 100% / cover transparent;
+    min-height: 600px;
+    background: url("http://2.bp.blogspot.com/-rmYWGGMSZcc/TmvMUYS_DQI/AAAAAAAABSc/o9AQA-A-PFo/s1600/hd+wallpaper+_TheWallpaperDB.blogspot.com+_+%25283%2529.jpg") no-repeat scroll 0px 100% / cover transparent;
 }
 
 nav ul li {

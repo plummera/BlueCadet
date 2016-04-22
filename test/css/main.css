@@ -1,4 +1,4 @@
-/*! blue-cadet - v0.1.2 - 2016-04-20
+/*! blue-cadet - v0.1.2 - 2016-04-21
 * https://github.com/plummera/BlueCadet#readme
 * Copyright (c) 2016 ; Licensed  */
 .btn {
@@ -44,6 +44,8 @@ img:hover {
   height: 250px;
   background-size: contain;
   background-repeat: no-repeat;
+  top: 221px;
+  left: 603px;
 }
 
 #stage {

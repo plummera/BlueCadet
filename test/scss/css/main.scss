@@ -29,15 +29,16 @@ img:hover {
 }
 
 #logo {
-  position: relative;
+  position: absolute;
   background: url("/img/485.png");
   width: 250px;
   height: 250px;
   background-size: contain;
   background-repeat: no-repeat;
-  top: 221px;
-  left: 603px;
+  top: 237px;
+  left: 50%;
 }
+
 #stage {
   background-color: silver;
 }
